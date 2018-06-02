@@ -84,7 +84,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Source-Code\vcpkg\vcpkg-export-20180602-170410\installed\x64-windows\include; C:\Source-Code\vcpkg\vcpkg-export-20180602-172037\installed\x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Source-Code\vcpkg\vcpkg-export-20180602-170410\installed\x64-windows\debug\lib; C:\Source-Code\vcpkg\vcpkg-export-20180602-172037\installed\x64-windows\debug\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>git2.lib;boost_atomic-vc140-mt-gd.lib;boost_container-vc140-mt-gd.lib;boost_math_c99f-vc140-mt-gd.lib;boost_math_c99l-vc140-mt-gd.lib;boost_math_c99-vc140-mt-gd.lib;boost_math_tr1f-vc140-mt-gd.lib;boost_math_tr1l-vc140-mt-gd.lib;boost_math_tr1-vc140-mt-gd.lib;boost_program_options-vc140-mt-gd.lib;boost_regex-vc140-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -108,13 +113,17 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Source-Code\vcpkg\vcpkg-export-20180602-170410\installed\x64-windows\include; C:\Source-Code\vcpkg\vcpkg-export-20180602-172037\installed\x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Source-Code\vcpkg\vcpkg-export-20180602-170410\installed\x64-windows\lib; C:\Source-Code\vcpkg\vcpkg-export-20180602-172037\installed\x64-windows\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>git2.lib;boost_atomic-vc140-mt.lib;boost_container-vc140-mt.lib;boost_math_c99f-vc140-mt.lib;boost_math_c99l-vc140-mt.lib;boost_math_c99-vc140-mt.lib;boost_math_tr1f-vc140-mt.lib;boost_math_tr1l-vc140-mt.lib;boost_math_tr1-vc140-mt.lib;boost_program_options-vc140-mt.lib;boost_regex-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
